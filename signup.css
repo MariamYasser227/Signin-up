@@ -1,0 +1,135 @@
+* {
+  margin: 0px;
+  padding-top: 0px;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 0;
+}
+
+.header {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.header h1 {
+  background-color: #1877f2;
+  color: white;
+  padding: 0.5em;
+  text-align: center;
+  width: 100%;
+}
+
+.container {
+  width: 50%;
+  display: flex;
+  gap: 2em;
+  padding: 3em;
+  background-color: white;
+  box-shadow: 0 2px 20px 2px rgb(150 150 150);
+  flex-wrap: wrap;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1em;
+  width: 100%;
+}
+
+.input-group label {
+  margin-bottom: 0.4em;
+  color: #1877f2;
+  font-weight: bolder;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"] {
+  padding: 0.5em;
+  border-radius: 0.3em;
+  border: 1px solid #ccc;
+  background-color: white;
+}
+
+input:focus {
+  outline-color: #1877f2;
+}
+
+label {
+  color: #1877f2;
+  font-weight: bolder;
+}
+
+.gender span {
+  color: #666;
+  cursor: pointer;
+}
+
+.gender:hover span {
+  color: #1877f2;
+}
+
+.buttons {
+  display: flex;
+  gap: 0.5em;
+  width: 40%;
+}
+
+input[type="date"] {
+  color: #1360c4;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+input[type="reset"],
+input[type="submit"] {
+  width: 50%;
+  padding: 0.9em;
+  border-radius: 0.5em;
+  border: none;
+  background-color: #1360c4;
+  color: white;
+  font-weight: bolder;
+  cursor: pointer;
+}
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+  background-color: #0d448b;
+}
+
+@media screen and (max-width: 991px) {
+  .header,
+  .container {
+    width: 90%;
+  }
+  .row {
+    flex-direction: column;
+    gap: 1em;
+  }
+  .input-group {
+    width: 100%;
+  }
+  input[type="reset"],
+  input[type="submit"] {
+    width: 100%;
+  }
+}
