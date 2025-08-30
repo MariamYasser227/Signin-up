@@ -1,0 +1,149 @@
+* {
+  margin: 0px;
+  padding-top: 0px;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+
+.Main-Page {
+  width: 100%;
+  height: 100vh;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Main-Page .Left-Sec,
+.Main-Page .Form {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.Right-Sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  gap: 1.5em;
+}
+.Main-Page .Form {
+  border-radius: 1em;
+  box-shadow: 0 2px 20px 2px rgb(150 150 150);
+  background-color: white;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.Main-Page .Left-Sec p {
+  width: 90%;
+  color: #6e6d6d;
+  line-height: 1.3;
+  font-size: 1.8em;
+}
+.Main-Page .Left-Sec h1 {
+  font-size: 3.5em;
+  color: #1877f2;
+}
+.Main-Page .Left-Sec {
+  margin-left: 4.5em;
+  width: 40%;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 80%;
+  padding: 0.8em;
+  margin: 0.5em;
+  border-radius: 0.3em;
+  border: 1px solid #ccc;
+  background-color: white;
+}
+input[type="submit"] {
+  cursor: pointer;
+  width: 80%;
+  padding: 0.7em;
+  margin: 0.5em;
+  background-color: #1877f2;
+  border-radius: 0.5em;
+  border: none;
+  color: white;
+  font-weight: bolder;
+}
+input[type="submit"]:hover {
+  background-color: #1455ab;
+}
+input:focus {
+  outline: none;
+}
+.Main-Page .Form .button a {
+  padding: 1em;
+  width: 50%;
+  border-radius: 0.5em;
+  background-color: #42b72a;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bolder;
+  text-decoration: none;
+}
+.Main-Page .Form .button a:hover {
+  background-color: #389527;
+}
+
+.Main-Page .Form hr {
+  width: 80%;
+  border: 1px solid #ccc;
+}
+.Main-Page .Form .Forget a {
+  text-decoration: none;
+  color: #1877f2;
+  font-weight: bolder;
+}
+.Main-Page .Form .Forget a:hover {
+  text-decoration: underline;
+  color: #1877f2;
+}
+.Main-Page .Right-Sec .create-page a {
+  text-decoration: none;
+  color: #1877f2;
+  font-weight: bolder;
+}
+.Main-Page .Right-Sec .create-page a:hover {
+  text-decoration: underline;
+}
+@media screen and (max-width: 991px) {
+  .Main-Page {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Main-Page .Left-Sec {
+    margin: 1em 0;
+  }
+
+  .Main-Page .Form,
+  .Main-Page .Left-Sec,
+  .Main-Page .Right-Sec {
+    width: 85%;
+
+    align-items: center;
+    text-align: center;
+  }
+
+  .Main-Page .Left-Sec p {
+    width: 100%;
+    font-size: 1.2em;
+  }
+
+  .Main-Page .Left-Sec h1 {
+    font-size: 2em;
+  }
+
+  .Main-Page .Form .button a {
+    font-size: 0.75em;
+  }
+}

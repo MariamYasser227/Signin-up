@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/signup.css" />
+    <title>Signup</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="header">
+        <h1>Create Account</h1>
+      </div>
+      <form class="container" id="form">
+        <div class="row">
+          <div class="input-group">
+            <label id="firstNameLabel">First Name :</label>
+            <input
+              type="text"
+              id="firstNameInput"
+              placeholder="Enter your first name"
+            />
+          </div>
+          <div class="input-group">
+            <label id="lastNameLabel">Last Name :</label>
+            <input
+              type="text"
+              id="lastNameInput"
+              placeholder="Enter your last name"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-group">
+            <label id="emailLabel">Email :</label>
+            <input
+              type="email"
+              id="emailInput"
+              placeholder="Enter your email address"
+            />
+          </div>
+          <div class="input-group">
+            <label id="phoneLabel">Phone Number :</label>
+            <input
+              type="text"
+              id="phoneInput"
+              placeholder="Enter your phone number"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-group">
+            <label id="passwordLabel">Password :</label>
+            <input
+              type="password"
+              id="passwordInput"
+              placeholder="Enter your password"
+            />
+          </div>
+          <div class="input-group">
+            <label id="confirmLabel">Confirm Password :</label>
+            <input
+              type="password"
+              id="confirmPasswordInput"
+              placeholder="Confirm your password"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-group">
+            <label id="genderLabel">Gender :</label>
+            <label class="gender"
+              ><input type="radio" id="maleInput" name="gender" /><span>
+                Male</span
+              ></label
+            >
+            <label class="gender"
+              ><input type="radio" id="femaleInput" name="gender" />
+              <span>Female</span></label
+            >
+          </div>
+          <div class="input-group">
+            <label id="birthdateLabel">Birthdate :</label>
+            <input type="date" id="birthdateInput" />
+          </div>
+        </div>
+        <div class="buttons">
+          <input type="reset" value="Reset" />
+          <input type="submit" value="Register" />
+        </div>
+      </form>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
